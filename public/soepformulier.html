@@ -84,6 +84,9 @@
         <br>
         <br>
         <button id="postWebsiteCF" class="btn-info" value="postWebsite">Post naar website(jouwdomein)</button>
+        <br>
+        <br>
+        <button id="wisOverzicht" class="btn-info" value="wisOverzicht">Wis Overzicht</button>
 
 
     </div>
@@ -128,7 +131,24 @@
 
 
         console.log ('in de functie in htmlformulier');
+        //Met 'Wis overzicht' wordt via server.js de file inhoud.html verwijderd
+        $('#wisOverzicht').click(function(e){
 
+            //de file inhoud.html wordt via server.js verplaatst naar c:\centerfruit
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/wisOverzicht'
+                //data: {}
+            }).done(function(result){
+                        console.log('overzicht gewist');
+
+                    });
+            //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
+            //het overzicht is gewist
+            dialog('Overzicht is gewist');
+
+        });
         //Met 'Post naar website' gaan we de gekozen dagen+soepen(inhoud.html) opslaan in de directory /centerfruit
         $('#postWebsite').click(function(e){
 

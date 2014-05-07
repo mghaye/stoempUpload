@@ -182,6 +182,18 @@ app.post('/opslaan',function(req,res){
         console.log('renamed complete');
     });
 });
+app.post('/wisOverzicht',function(req,res){
+    console.log('in de opslaan-functie');
+    if(!('c:/soepUpload/public/inhoud.html'=='')){
+        fs.unlink('c:/soepUpload/public/inhoud.html', function (err) {
+            if (err) throw err;
+            console.log('wis overzicht complete');
+        });
+
+    }
+
+});
+
 
 
 
