@@ -14,366 +14,337 @@
 <body>
 
 
-    <div class="col-lg-4">
-        <div class="container">
-            <input type="submit" class="btn-info" value="Post naar database" id="postData">
-            <input type="submit" class="btn-info" value="Verwijder uit database" id="deleteData">
-            <br><br>
-            <input name="soepnieuw" id="ingave">
-            <label id="soeplabel" class="label-info"></label>
-            <img src="img/pijl.png" width="75" height="75">
-
-            <br>
-
-
-            <br><br>
-            <br><br>
-            <input type="submit" class="btn-info" value="Haal database op" id="haalop">
-            <input type="submit" class="btn-info" value="Sorteer alfabetisch" id="sorteer">
-            <br><br>
-            <select id="mySelect" class="dropdown" name="soepen">
-
-
-            </select>
-
-        </div>
-
-    </div>
-
-    <div class="col-lg-4">
-        <label class="text-info">Kies dag :</label>
-        <input type="date" id="dag" value="dddd/mm/jjjj">
-        <br>
-        <label id="dagsoep1" class="text-info"></label>
-
-        <br>
-        <label id="dagsoep2" class="text-info"></label>
-
-        <br>
-        <label id="dagsoep3" class="text-info"></label>
-
-        <br>
-        <label id="dagsoep4" class="text-info"></label>
-
-
-
-
-        <br>
-        <br>
-        <br>
-
-        <button id="dagVoegToe" class="btn-info" value="Voeg toe">Voeg soep toe</button>
-        <br>
-        <br>
-        <button id="wisLabels" class="btn-info" value="Wis labels">Wis labels</button>
-        <br>
-        <br>
-
-        <button id="verzendDag" class="btn-info" value="Verzend">Verzend dag</button>
+<div class="col-lg-4">
+    <div class="container">
+        <input type="submit" class="btn-info" value="Post naar database" id="postData">
+        <input type="submit" class="btn-info" value="Verwijder uit database" id="deleteData">
+        <br><br>
+        <input name="soepnieuw" id="ingave">
+        <label id="soeplabel" class="label-info"></label>
         <img src="img/pijl.png" width="75" height="75">
 
-    </div>
-    <div class="col-lg-4">
-        <div id="overzicht"></div>
+        <br>
 
 
+        <br><br>
+        <br><br>
+        <input type="submit" class="btn-info" value="Haal database op" id="haalop">
+        <input type="submit" class="btn-info" value="Sorteer alfabetisch" id="sorteer">
+        <br><br>
+        <select id="mySelect" class="dropdown" name="soepen">
 
-        <br>
-        <br>
-        <button id="postWebsite" class="btn-info" value="postWebsite">Post naar website(lokaal)</button>
-        <br>
-        <br>
-        <button id="postWebsiteCF" class="btn-info" value="postWebsite">Post naar website(jouwdomein)</button>
-        <br>
-        <br>
-        <button id="wisOverzicht" class="btn-info" value="wisOverzicht">Wis Overzicht</button>
 
+        </select>
 
     </div>
 
+</div>
+
+<div class="col-lg-4">
+    <label class="text-info">Kies dag :</label>
+    <input type="date" id="dag" value="dddd/mm/jjjj">
+    <br>
+    <label id="dagsoep1" class="text-info"></label>
+
+    <br>
+    <label id="dagsoep2" class="text-info"></label>
+
+    <br>
+    <label id="dagsoep3" class="text-info"></label>
+
+    <br>
+    <label id="dagsoep4" class="text-info"></label>
 
 
+    <br>
+    <br>
+    <br>
+
+    <button id="dagVoegToe" class="btn-info" value="Voeg toe">Voeg soep toe</button>
+    <br>
+    <br>
+    <button id="wisLabels" class="btn-info" value="Wis labels">Wis labels</button>
+    <br>
+    <br>
+
+    <button id="verzendDag" class="btn-info" value="Verzend">Verzend dag</button>
+    <img src="img/pijl.png" width="75" height="75">
+
+</div>
+<div class="col-lg-4">
+    <div id="overzicht"></div>
 
 
+    <br>
+    <br>
+    <button id="postWebsite" class="btn-info" value="postWebsite">Post naar website(lokaal)</button>
+    <br>
+    <br>
+    <form action="http://www.centerfruit.be/testfile.php" method="post"
+          enctype="multipart/form-data">
+        <label for="file" class="text-info">Filename:</label>
+        <input type="file"  name="file" id="file"><br>
+        <input type="submit"  class="btn-info" name="submit" value="Post naar website(jouwdomein)">
+    </form>
+    <br>
+    <br>
+    <button id="wisOverzicht" class="btn-info" value="wisOverzicht">Wis Overzicht</button>
 
 
+</div>
 
 
+<div id="dialog-message" title="Actie geslaagd">
+    <p>
 
+    </p>
 
-
-    <div id="dialog-message" title="Actie geslaagd">
-        <p>
-
-        </p>
-
-    </div>
-
-
-
-
-
-
+</div>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 
 
-
-
-
-
-
 <script>
 
-    $(document).ready(function(){
+$(document).ready(function () {
 
 
-        console.log ('in de functie in htmlformulier');
-        //Met 'Wis overzicht' wordt via server.js de file inhoud.html verwijderd
-        $('#wisOverzicht').click(function(e){
+    console.log('in de functie in htmlformulier');
+    //Met 'Wis overzicht' wordt via server.js de file inhoud.html verwijderd
+    $('#wisOverzicht').click(function (e) {
 
-            //de file inhoud.html wordt via server.js verplaatst naar c:\centerfruit
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: '/wisOverzicht'
-                //data: {}
-            }).done(function(result){
-                        console.log('overzicht gewist');
-
-                    });
-            //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
-            //het overzicht is gewist
-            dialog('Overzicht is gewist');
+        //de file inhoud.html wordt via server.js verwijderd
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/wisOverzicht'
+            //data: {}
+        }).done(function (result) {
+            console.log('overzicht gewist');
 
         });
-        //Met 'Post naar website' gaan we de gekozen dagen+soepen(inhoud.html) opslaan in de directory /centerfruit
-        $('#postWebsite').click(function(e){
+        $('#overzicht').empty();
+        //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
+        //het overzicht is gewist
 
-            //de file inhoud.html wordt via server.js verplaatst naar c:\centerfruit
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: '/opslaan'
-                //data: {}
-            }).done(function(result){
-                console.log('opgeslagen');
+        dialog('Overzicht is gewist');
 
-            });
-            //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
-            //het programma is verzonden
-            dialog('Programma is opgeslagen');
+    });
+    //Met 'Post naar website' gaan we de gekozen dagen+soepen(inhoud.html) opslaan in de directory /centerfruit
+    $('#postWebsite').click(function (e) {
 
-
-
-        });
-        $('#postWebsiteCF').click(function(e){
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: 'c:/xampp/htdocs/ontvangen/ontvangen.php',
-                data: {'inhoud':'c:/soepen/public/inhoud.html'}
-            }).done(function(result){
-                console.log('verzonden');
-
-            });
-
+        //de file inhoud.html wordt via server.js verplaatst naar c:\centerfruit
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/opslaan'
+            //data: {}
+        }).done(function (result) {
+            console.log('opgeslagen');
 
         });
-
-
-        //met de 'Voeg toe' button gaan we voor de gekozen datum tot 4 verschillende
-        //soepen kunnen toevoegen
-        var dagteller=0;
-        $('#dagVoegToe').click(function (e) {
-            dagteller=dagteller+1;
-            //console.log(dagteller);
-            e.preventDefault();
-            //het label met de overeenkomstige dagteller wordt gelijkgesteld aan het ingaveveld
-            $('#dagsoep'+dagteller).text($('#ingave').val());
-            if (dagteller>=4){
-                dagteller=0;
-            }
-        })
-
-        //'wisLabels' zet maakt alle labels terug leeg en zet dagteller terug op nul
-        //zodat er terug vanaf label1 kan worden bijgevoegd
-        $('#wisLabels').click(function(e){
-            e.preventDefault();
-            for(i=0;i<5;i++){
-                $('#dagsoep'+i).text('');
-                dagteller=0;
-
-            }
-        });
-
-        //'Verzend' gaat de gekozen dag en labels via de server posten naar dagsoep.html
-        $('#verzendDag').on('click',function(e){
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: '/soepen',
-                data: {
-                    'soep1' : $('#dagsoep1').text(),
-                    'soep2' : $('#dagsoep2').text(),
-                    'soep3' : $('#dagsoep3').text(),
-                    'soep4' : $('#dagsoep4').text(),
-                    'datum' : $('#dag').val()
-                }
-            }).done(function(result){
-                console.log('post dagsoepen verstuurd');
-
-            });
-            //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
-            //de dag is verzonden
-            dialog('Dag is  succesvol verzonden');
-            $('#overzicht').load('inhoud.html');
-
-
-
-
-        });
-
-
-
-
-        //Met deze button worden de soepnamen uit de database gehaald
-        //en aan de select toegevoegd
-        $('#haalop').click(function(e){
-            e.preventDefault();
-            //select wordt eerst leeggemaakt indien die al opties bevat
-            $('#mySelect').empty();
-            console.log('lijst wordt opgehaald');
-            //hier worden de soepen binnengehaald van de app.get(server.js)
-            $.getJSON('/list',function(data) {
-                 $.each(data, function(key, soep) {
-                     console.log(soep.naam);
-                     $('#mySelect').append('<option value=1>'+
-                     //eerste letter wordt omgezet naar hoofdletter
-                     (soep.naam).substr(0,1).toUpperCase()+(soep.naam).substr(1)+'</option>');
-                 });
-            });
-
-
-        });
-        //Deze knop sorteert de select alfabetisch, éénmaal klikken voor ASC, tweede maal voor DESC
-        var teller= 0;
-        $('#sorteer').click(function(e){
-            e.preventDefault();
-            teller=teller+1;
-            if (teller==1){
-                //alfabetisch sorteren A->Z
-                var my_options = $('#mySelect option');
-
-                my_options.sort(function(a,b) {
-                    if (a.text > b.text) return 1;
-                    else if (a.text < b.text) return -1;
-                    else return 0
-                })
-
-                $('#mySelect').empty().append( my_options );
-                //zichtbaar vak van de select leegmaken
-                $('#mySelect option').attr('selected',false);
-
-
-            }
-            else
-            {
-                //alfabetisch sorteren Z->A
-                var my_options = $('#mySelect option');
-
-                my_options.sort(function(a,b) {
-                    if (a.text < b.text) return 1;
-                    else if (a.text > b.text) return -1;
-                    else return 0
-                })
-
-                $('#mySelect').empty().append( my_options );
-                $('#mySelect option').attr('selected',false);
-                teller=0;
-
-            }
-
-        });
-
-        //Deze button zorgt ervoor dat de ingevulde soepnaam naar de server wordt
-        //gepost zodat die daar in de database kan worden verwijderd
-        $('#deleteData').click(function(e) {
-            e.preventDefault();
-            //in de database wordt altijd gewerkt met strings in LowerCase
-            var soepnaam=($('#ingave').val()).toLowerCase();
-            $.ajax({
-                type: 'POST',
-                url: '/verwijder',
-                data: {'soep' : soepnaam}
-            }).done(function(result){
-                console.log('post verstuurd');
-
-            });
-            //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt dat de soep is verwijderd
-            //en de ingavebox terug wordt leegmaakt
-            dialog(' Soep is succesvol verwijderd');
-
-        });
-
-
-
-
-
-
-
-
-        //Deze button zorgt ervoor dat de ingevulde soepnaam naar de server wordt
-        //gepost zodat die daar in de database kan worden weggeschreven
-        $('#postData').click(function(e) {
-            e.preventDefault();
-            //in de database wordt altijd gewerkt met strings in LowerCase
-            var soepnaam=($('#ingave').val()).toLowerCase();
-
-            $.ajax({
-                type: 'POST',
-                url: '/',
-                data: {'soep' : soepnaam}
-            }).done(function(result){
-                console.log('post verstuurd');
-
-            });
-
-            //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt dat de soep is opgeslagen
-            //en de ingavebox terug wordt leegmaakt
-            dialog('Soep is succesvol opgeslagen');
-        });
-        //Als we een soep kiezen uit de select, wordt deze in de input  en op het soeplabel getoond
-        $('#mySelect').on('change',function(){
-
-            $('#ingave').val($('#mySelect option:selected').text());
-            $('#soeplabel').text($('#mySelect option:selected').text());
-
-        });
-        //<p> wordt hier onzichtbaar gezet, deze bevat de dialogbox die
-        //opspringt na een actie
-        $('p').css('display','none');
-
+        //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
+        //het programma is verzonden
+        dialog('Programma is opgeslagen');
 
 
     });
-    function dialog(message) {
-        $('p').html('<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>' +message);
-        $('p').css('display', 'block');
-        $(function () {
-            $("#dialog-message").dialog({
-                modal: true,
-                buttons: {
-                    Ok: function () {
-                        $(this).dialog("close");
-                    }
-                }
+    $('#postWebsiteCF').click(function (e) {
+        e.preventDefault();
+
+
+        dialog('Programma is verzonden naar jouwDomein');
+
+    });
+
+
+    //met de 'Voeg toe' button gaan we voor de gekozen datum tot 4 verschillende
+    //soepen kunnen toevoegen
+    var dagteller = 0;
+    $('#dagVoegToe').click(function (e) {
+        dagteller = dagteller + 1;
+        //console.log(dagteller);
+        e.preventDefault();
+        //het label met de overeenkomstige dagteller wordt gelijkgesteld aan het ingaveveld
+        $('#dagsoep' + dagteller).text($('#ingave').val());
+        if (dagteller >= 4) {
+            dagteller = 0;
+        }
+    })
+
+    //'wisLabels' zet maakt alle labels terug leeg en zet dagteller terug op nul
+    //zodat er terug vanaf label1 kan worden bijgevoegd
+    $('#wisLabels').click(function (e) {
+        e.preventDefault();
+        for (i = 0; i < 5; i++) {
+            $('#dagsoep' + i).text('');
+            dagteller = 0;
+
+        }
+    });
+
+
+    //'Verzend' gaat de gekozen dag en labels via de server posten naar inhoud(dagsoep).html
+    $('#verzendDag').on('click', function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/soepen',
+            data: {
+                'soep1': $('#dagsoep1').text(),
+                'soep2': $('#dagsoep2').text(),
+                'soep3': $('#dagsoep3').text(),
+                'soep4': $('#dagsoep4').text(),
+                'datum': $('#dag').val()
+            }
+        }).done(function (result) {
+            console.log('post dagsoepen verstuurd');
+
+        });
+        //De labels worden terug gewist zodat er vlot kan overgegaan naar een nieuwe dag
+        for (i = 0; i < 5; i++) {
+            $('#dagsoep' + i).text('');
+            dagteller = 0;
+
+        }
+        //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt
+        //de dag is verzonden
+        dialog('Dag is  succesvol verzonden');
+        $('#overzicht').load('inhoud.html');
+
+
+    });
+
+
+    //Met deze button worden de soepnamen uit de database gehaald
+    //en aan de select toegevoegd
+    $('#haalop').click(function (e) {
+        e.preventDefault();
+        //select wordt eerst leeggemaakt indien die al opties bevat
+        $('#mySelect').empty();
+        console.log('lijst wordt opgehaald');
+        //hier worden de soepen binnengehaald van de app.get(server.js)
+        $.getJSON('/list', function (data) {
+            $.each(data, function (key, soep) {
+                console.log(soep.naam);
+                $('#mySelect').append('<option value=1>' +
+                    //eerste letter wordt omgezet naar hoofdletter
+                        (soep.naam).substr(0, 1).toUpperCase() + (soep.naam).substr(1) + '</option>');
             });
         });
-        $('#ingave').val('');
-    }
+
+
+    });
+    //Deze knop sorteert de select alfabetisch, éénmaal klikken voor ASC, tweede maal voor DESC
+    var teller = 0;
+    $('#sorteer').click(function (e) {
+        e.preventDefault();
+        teller = teller + 1;
+        if (teller == 1) {
+            //alfabetisch sorteren A->Z
+            var my_options = $('#mySelect option');
+
+            my_options.sort(function (a, b) {
+                if (a.text > b.text) return 1;
+                else if (a.text < b.text) return -1;
+                else return 0
+            })
+
+            $('#mySelect').empty().append(my_options);
+            //zichtbaar vak van de select leegmaken
+            $('#mySelect option').attr('selected', false);
+
+
+        }
+        else {
+            //alfabetisch sorteren Z->A
+            var my_options = $('#mySelect option');
+
+            my_options.sort(function (a, b) {
+                if (a.text < b.text) return 1;
+                else if (a.text > b.text) return -1;
+                else return 0
+            })
+
+            $('#mySelect').empty().append(my_options);
+            $('#mySelect option').attr('selected', false);
+            teller = 0;
+
+        }
+
+    });
+
+    //Deze button zorgt ervoor dat de ingevulde soepnaam naar de server wordt
+    //gepost zodat die daar in de database kan worden verwijderd
+    $('#deleteData').click(function (e) {
+        e.preventDefault();
+        //in de database wordt altijd gewerkt met strings in LowerCase
+        var soepnaam = ($('#ingave').val()).toLowerCase();
+        $.ajax({
+            type: 'POST',
+            url: '/verwijder',
+            data: {'soep': soepnaam}
+        }).done(function (result) {
+            console.log('post verstuurd');
+
+        });
+        //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt dat de soep is verwijderd
+        //en de ingavebox terug wordt leegmaakt
+        dialog(' Soep is succesvol verwijderd');
+
+    });
+
+
+    //Deze button zorgt ervoor dat de ingevulde soepnaam naar de server wordt
+    //gepost zodat die daar in de database kan worden weggeschreven
+    $('#postData').click(function (e) {
+        e.preventDefault();
+        //in de database wordt altijd gewerkt met strings in LowerCase
+        var soepnaam = ($('#ingave').val()).toLowerCase();
+
+        $.ajax({
+            type: 'POST',
+            url: '/',
+            data: {'soep': soepnaam}
+        }).done(function (result) {
+            console.log('post verstuurd');
+
+        });
+
+        //deze functie zorgt ervoor dat een dialog box verschijnt die meedeelt dat de soep is opgeslagen
+        //en de ingavebox terug wordt leegmaakt
+        dialog('Soep is succesvol opgeslagen');
+    });
+    //Als we een soep kiezen uit de select, wordt deze in de input  en op het soeplabel getoond
+    $('#mySelect').on('change', function () {
+
+        $('#ingave').val($('#mySelect option:selected').text());
+        $('#soeplabel').text($('#mySelect option:selected').text());
+
+    });
+    //<p> wordt hier onzichtbaar gezet, deze bevat de dialogbox die
+    //opspringt na een actie
+    $('p').css('display', 'none');
+
+
+});
+function dialog(message) {
+    $('p').html('<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>' + message);
+    $('p').css('display', 'block');
+    $(function () {
+        $("#dialog-message").dialog({
+            modal: true,
+            buttons: {
+                Ok: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    });
+    $('#ingave').val('');
+}
 </script>
 <script src="js/bootstrap.js"></script>
 </body>
