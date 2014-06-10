@@ -23,12 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="soepformulier.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="soepformulier.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="30" selection-start="2050" selection-end="2050" vertical-scroll-proportion="-48.384617" vertical-offset="0" max-vertical-offset="6052">
+            <state line="371" column="17" selection-start="11063" selection-end="11063" vertical-scroll-proportion="0.9489489" vertical-offset="5675" max-vertical-offset="7055">
               <folding>
-                <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+                <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+            <state line="4" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
               <folding />
             </state>
           </provider>
@@ -46,34 +46,7 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="7" selection-start="5819" selection-end="5819" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="4947">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dagsoep.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/centerfruit/dagsoep.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="74" selection-start="146" selection-end="146" vertical-scroll-proportion="-1.9615384" vertical-offset="102" max-vertical-offset="3009">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.17196532" vertical-offset="0" max-vertical-offset="692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start.bat" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="138" column="46" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.0" vertical-offset="1960" max-vertical-offset="4386">
               <folding />
             </state>
           </provider>
@@ -150,7 +123,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,14 +155,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soepen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soepUpload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="last_opened_file_path" value="C:/centerfruit" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/centerfruit" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
@@ -231,7 +218,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -239,7 +226,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27278563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3042362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05698006" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -247,24 +234,24 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3231198" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23216602" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05698006" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05698006" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -285,11 +272,18 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="159" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6205">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -317,7 +311,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="24" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3230">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -343,7 +337,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="24" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3230">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -369,7 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="51" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0" vertical-offset="2754" max-vertical-offset="3043">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -395,7 +389,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="0" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -421,7 +415,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1802">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -442,7 +436,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="46" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -458,7 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="34" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -474,7 +468,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="31" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -490,7 +484,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="34" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -499,7 +493,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="34" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="986">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -508,7 +502,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="986">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -517,7 +511,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="986">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -526,7 +520,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="48" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -535,7 +529,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="31" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="986">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -544,7 +538,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="39" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -553,7 +547,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="39" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -562,7 +556,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="39" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="952">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -571,7 +565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="20" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -580,7 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="11" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -589,7 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="11" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
           <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -604,38 +598,10 @@
         <state line="789" column="0" selection-start="10075" selection-end="10075" vertical-scroll-proportion="0.0" vertical-offset="11169" max-vertical-offset="120802" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dagsoep.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="591" selection-end="591" vertical-scroll-proportion="73.65385" vertical-offset="2357" max-vertical-offset="3009" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="7" selection-start="5819" selection-end="5819" vertical-scroll-proportion="0.0" vertical-offset="2176" max-vertical-offset="4947">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/centerfruit/dagsoep.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="74" selection-start="146" selection-end="146" vertical-scroll-proportion="-1.9615384" vertical-offset="102" max-vertical-offset="3009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="30" selection-start="2050" selection-end="2050" vertical-scroll-proportion="-48.384617" vertical-offset="0" max-vertical-offset="6052">
-          <folding>
-            <marker date="1401042586482" expanded="true" signature="10170:10202" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,8 +614,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.17196532" vertical-offset="0" max-vertical-offset="692">
+        <state line="7" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/centerfruit/dagsoep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="74" selection-start="146" selection-end="146" vertical-scroll-proportion="64.61539" vertical-offset="1833" max-vertical-offset="3009" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dagsoep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="3009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="46" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.0" vertical-offset="1960" max-vertical-offset="4386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="371" column="17" selection-start="11063" selection-end="11063" vertical-scroll-proportion="0.9489489" vertical-offset="5675" max-vertical-offset="7055">
+          <folding>
+            <marker date="1402352048054" expanded="false" signature="11622:11654" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
