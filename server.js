@@ -114,7 +114,7 @@ app.post('/verwijder', function (req, res) {
     })
 
 });
-app.post('/verwijderDagen',function(req,res){
+/*app.post('/verwijderDagen',function(req,res){
     console.log('in de app.post/verwijderDagen-functie');
     var sql='DELETE FROM dag';
     connection.query(sql, function (err) {
@@ -123,23 +123,24 @@ app.post('/verwijderDagen',function(req,res){
         console.log('dagen zijn verwijderd');
     })
 
-});
+});*/
 app.post('/verwijderOudsteDag',function(req,res){
     console.log('in de app.post/verwijderDagen-functie');
 
-    var zoeksql='SElECT * FROM dag WHERE id=(SELECT min(id)from dag)';
+    var zoeksql='SElECT * FROM dag WHERE datum=(SELECT min(datum)from dag)';
     connection.query(zoeksql, function (err,dag) {
         if (err)
             throw err;
 
-        var kleinsteId=dag[0].id
-        console.log(dag[0].id);
-        var sql='DELETE FROM dag WHERE id= ' + kleinsteId;
+        var kleinsteDag=dag[0].datum
+        kleinsteDag='"'+kleinsteDag+'"';
+        console.log(dag[0].datum);
+        var sql='DELETE FROM dag WHERE datum= ' + kleinsteDag;
         console.log(sql);
         connection.query(sql, function (err) {
             if (err)
                 throw err;
-            console.log('dag met id'+kleinsteId+ ' is verwijderd');
+            console.log('dag met datum'+kleinsteDag+ ' is verwijderd');
         })
     })
 
