@@ -126,8 +126,8 @@ app.post('/verwijder', function (req, res) {
 });*/
 app.post('/verwijderOudsteDag',function(req,res){
     console.log('in de app.post/verwijderDagen-functie');
-
-    var zoeksql='SElECT * FROM dag WHERE datum=(SELECT min(datum)from dag)';
+    //op deze manier wordt de oudste dag dag[0]
+    var zoeksql='SElECT * FROM dag ORDER BY datum ASC';
     connection.query(zoeksql, function (err,dag) {
         if (err)
             throw err;
