@@ -187,7 +187,9 @@ $(document).ready(function () {
         //console.log(dagteller);
         e.preventDefault();
         //het label met de overeenkomstige dagteller wordt gelijkgesteld aan het ingaveveld
-        $('#dagsoep' + dagteller).text($('#ingave').val());
+        $('#dagsoep' + dagteller).text($('#soeplabel').text());
+        console.log("dagsoep is "+$('#soeplabel').text());
+
         if (dagteller >= 4) {
             dagteller = 0;
         }

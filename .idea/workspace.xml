@@ -23,12 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="soepformulier.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="soepformulier.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="362" column="27" selection-start="10793" selection-end="10793" vertical-scroll-proportion="1.4716268" vertical-offset="4987" max-vertical-offset="7106">
+            <state line="191" column="0" selection-start="5399" selection-end="5399" vertical-scroll-proportion="-50.346153" vertical-offset="1938" max-vertical-offset="7140">
               <folding>
-                <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+                <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="3" selection-start="4593" selection-end="4593" vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="4641">
+            <state line="115" column="30" selection-start="3325" selection-end="3325" vertical-scroll-proportion="2.8170028" vertical-offset="0" max-vertical-offset="4573">
               <folding />
             </state>
           </provider>
@@ -103,17 +103,17 @@
         <option value="$PROJECT_DIR$/start.bat" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/public/css/stylesheet.css" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/soepformulier.html" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1298" />
-    <option name="height" value="994" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -155,7 +155,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="soepupload" />
+              <option name="myItemId" value="soepUpload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -165,25 +165,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="soepupload" />
+              <option name="myItemId" value="soepUpload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soepen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soepupload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,7 +222,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1298" height="994" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -244,7 +230,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30390626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31129652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05698006" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -274,7 +260,7 @@
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -306,7 +292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="159" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6205">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -329,7 +315,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="24" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3230">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -355,7 +341,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="24" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3230">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -381,7 +367,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="51" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0" vertical-offset="2754" max-vertical-offset="3043">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -407,7 +393,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="0" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -433,7 +419,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1802">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -454,7 +440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="46" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -470,7 +456,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="34" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -486,7 +472,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="31" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -502,7 +488,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="34" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -511,7 +497,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="34" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="986">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -520,7 +506,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="986">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -529,7 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="986">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -538,7 +524,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="48" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -547,7 +533,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="31" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="986">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -556,7 +542,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="39" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -565,7 +551,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="39" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -574,7 +560,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="39" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="952">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -583,7 +569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="20" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -592,7 +578,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="11" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -601,7 +587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="11" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
           <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -647,19 +633,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="3" selection-start="4593" selection-end="4593" vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="4641">
-          <folding />
+        <state line="191" column="0" selection-start="5399" selection-end="5399" vertical-scroll-proportion="-50.346153" vertical-offset="1938" max-vertical-offset="7140">
+          <folding>
+            <marker date="1405109288588" expanded="false" signature="11773:11805" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/soepformulier.html">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="27" selection-start="10793" selection-end="10793" vertical-scroll-proportion="1.4716268" vertical-offset="4987" max-vertical-offset="7106">
-          <folding>
-            <marker date="1405012140439" expanded="false" signature="11709:11741" placeholder="..." />
-          </folding>
+        <state line="115" column="30" selection-start="3325" selection-end="3325" vertical-scroll-proportion="2.8170028" vertical-offset="0" max-vertical-offset="4573">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -111,7 +111,10 @@ app.post('/verwijder', function (req, res) {
         if (err)
             throw err;
         console.log(ontvangenSoep + ' is verwijderd');
-    })
+    });
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.write('soep verwijderd');
+    res.end();
 
 });
 /*app.post('/verwijderDagen',function(req,res){
@@ -126,43 +129,33 @@ app.post('/verwijder', function (req, res) {
  });*/
 app.post('/verwijderOudsteDag', function (req, res) {
 
-    var geklikt=req.body.geklikt;
-    if (geklikt=='true'){
-        console.log("geklikt = "+ geklikt);
-        console.log('in de app.post/verwijderDagen-functie');
-        //op deze manier wordt de oudste dag dag[0]
-        var zoeksql = 'SElECT datum FROM dag ORDER BY id ASC LIMIT 0,1';
-        connection.query(zoeksql, function (err, dag) {
-            if (err) {
+
+    console.log('in de app.post/verwijderDagen-functie');
+    //op deze manier wordt de oudste dag dag[0]
+    var zoeksql = 'SElECT datum FROM dag ORDER BY realDate ASC LIMIT 0,1';
+    connection.query(zoeksql, function (err, dag) {
+        if (err) {
+            throw err;
+        } else {
+            console.log(dag);
+        }
+
+        console.log("dag is= " + dag[0]);
+        var kleinsteDag = dag[0].datum;
+        kleinsteDag = '"' + kleinsteDag + '"';
+        console.log(dag[0].datum);
+        var sql = 'DELETE FROM dag WHERE datum= ' + kleinsteDag;
+        console.log(sql);
+        connection.query(sql, function (err) {
+            if (err)
                 throw err;
-            } else {
-                console.log(dag);
-            }
+            console.log('dag met datum' + kleinsteDag + ' is verwijderd');
+        })
+    });
 
-            console.log("dag is= " + dag[0]);
-            var kleinsteDag = dag[0].datum;
-            kleinsteDag = '"' + kleinsteDag + '"';
-            console.log(dag[0].datum);
-            var sql = 'DELETE FROM dag WHERE datum= ' + kleinsteDag;
-            console.log(sql);
-            connection.query(sql, function (err) {
-                if (err)
-                    throw err;
-                console.log('dag met datum' + kleinsteDag + ' is verwijderd');
-            })
-        });
-
-    }
-
-
-    else{
-        console.log("niet geklikt = "+ geklikt);
-
-    }
-
-    geklikt='false';
-   
-
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.write('dag verwijderd');
+    res.end();
 });
 
 
@@ -241,8 +234,8 @@ app.post('/soepen', function (req, res) {
         } else {
             if (data == '') {
                 console.log('dag wordt opgeslagen');
-                sql = 'INSERT INTO dag(datum,soep1,soep2,soep3,soep4) VALUES ';
-                sql += '(' + datum + ',' + soep1 + ',' + soep2 + ',' + soep3 + ',' + soep4 + ')';
+                sql = 'INSERT INTO dag(datum,soep1,soep2,soep3,soep4,realDate) VALUES ';
+                sql += '(' + datum + ',' + soep1 + ',' + soep2 + ',' + soep3 + ',' + soep4 +','+'"'+datumInvoer+'"'+')';
                 console.log(sql);
                 connection.query(sql, function (err) {
                     if (err)
@@ -256,6 +249,9 @@ app.post('/soepen', function (req, res) {
 
         }
     });
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.write('dag toegevoegd');
+    res.end();
 
 
 });
