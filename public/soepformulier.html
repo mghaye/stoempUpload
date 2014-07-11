@@ -357,11 +357,14 @@ $(document).ready(function () {
 
     });*/
 
-    $('#wisOudsteDag').click(function(e){
+
+    $('#wisOudsteDag').one('click',function(e){
+
         e.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'verwijderOudsteDag'
+            url: '/verwijderOudsteDag',
+            data: {'geklikt':'true'}
         }).done(function (result) {
             console.log('post verstuurd');
 

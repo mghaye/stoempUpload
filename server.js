@@ -115,37 +115,55 @@ app.post('/verwijder', function (req, res) {
 
 });
 /*app.post('/verwijderDagen',function(req,res){
-    console.log('in de app.post/verwijderDagen-functie');
-    var sql='DELETE FROM dag';
-    connection.query(sql, function (err) {
-        if (err)
-            throw err;
-        console.log('dagen zijn verwijderd');
-    })
+ console.log('in de app.post/verwijderDagen-functie');
+ var sql='DELETE FROM dag';
+ connection.query(sql, function (err) {
+ if (err)
+ throw err;
+ console.log('dagen zijn verwijderd');
+ })
 
-});*/
-app.post('/verwijderOudsteDag',function(req,res){
-    console.log('in de app.post/verwijderDagen-functie');
-    //op deze manier wordt de oudste dag dag[0]
-    var zoeksql='SElECT * FROM dag ORDER BY datum ASC';
-    connection.query(zoeksql, function (err,dag) {
-        if (err)
-            throw err;
+ });*/
+app.post('/verwijderOudsteDag', function (req, res) {
 
-        var kleinsteDag=dag[0].datum
-        kleinsteDag='"'+kleinsteDag+'"';
-        console.log(dag[0].datum);
-        var sql='DELETE FROM dag WHERE datum= ' + kleinsteDag;
-        console.log(sql);
-        connection.query(sql, function (err) {
-            if (err)
+    var geklikt=req.body.geklikt;
+    if (geklikt=='true'){
+        console.log("geklikt = "+ geklikt);
+        console.log('in de app.post/verwijderDagen-functie');
+        //op deze manier wordt de oudste dag dag[0]
+        var zoeksql = 'SElECT datum FROM dag ORDER BY id ASC LIMIT 0,1';
+        connection.query(zoeksql, function (err, dag) {
+            if (err) {
                 throw err;
-            console.log('dag met datum'+kleinsteDag+ ' is verwijderd');
-        })
-    })
+            } else {
+                console.log(dag);
+            }
+
+            console.log("dag is= " + dag[0]);
+            var kleinsteDag = dag[0].datum;
+            kleinsteDag = '"' + kleinsteDag + '"';
+            console.log(dag[0].datum);
+            var sql = 'DELETE FROM dag WHERE datum= ' + kleinsteDag;
+            console.log(sql);
+            connection.query(sql, function (err) {
+                if (err)
+                    throw err;
+                console.log('dag met datum' + kleinsteDag + ' is verwijderd');
+            })
+        });
+
+    }
 
 
-})
+    else{
+        console.log("niet geklikt = "+ geklikt);
+
+    }
+
+    geklikt='false';
+   
+
+});
 
 
 //post-functie die dagsoepen opslaat in database
@@ -212,16 +230,16 @@ app.post('/soepen', function (req, res) {
     var dag = convertDay(dag);
     console.log(dag);
     datum = weekdag + ' ' + dag + ' ' + maandnaam;
-    datum ='"'+datum+'"';
+    datum = '"' + datum + '"';
     //Controle of de dag niet reeds is opgeslagen
-    var sql='SELECT datum FROM dag WHERE datum= '
-    sql+=datum;
+    var sql = 'SELECT datum FROM dag WHERE datum= '
+    sql += datum;
     console.log(sql);
-    connection.query(sql,function(err,data){
-        if (err){
+    connection.query(sql, function (err, data) {
+        if (err) {
             throw err;
-        }else{
-            if(data==''){
+        } else {
+            if (data == '') {
                 console.log('dag wordt opgeslagen');
                 sql = 'INSERT INTO dag(datum,soep1,soep2,soep3,soep4) VALUES ';
                 sql += '(' + datum + ',' + soep1 + ',' + soep2 + ',' + soep3 + ',' + soep4 + ')';
@@ -232,7 +250,7 @@ app.post('/soepen', function (req, res) {
                 });
 
 
-            }else{
+            } else {
                 console.log('dag bestaat al');
             }
 
@@ -240,11 +258,7 @@ app.post('/soepen', function (req, res) {
     });
 
 
-
-
 });
-
-
 
 
 var server = app.listen(3000, function () {
