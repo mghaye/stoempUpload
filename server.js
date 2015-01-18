@@ -35,7 +35,7 @@ app.post('/', function (req, res) {
 
     //Controle om te kijken of de soep niet reeds is opgeslagen
     var soepnaam = '("' + ontvangenSoep + '")'
-    var sql = 'SELECT naam FROM soep WHERE naam= '
+    var sql = 'SELECT naam FROM stoemp WHERE naam= '
     sql += soepnaam;
     console.log(sql);
     connection.query(sql, function (err, data) {
@@ -45,7 +45,7 @@ app.post('/', function (req, res) {
         } else {
             if (data == '') {
                 console.log('soep wordt opgeslagen');
-                sql = 'INSERT INTO soep(naam) VALUES ';
+                sql = 'INSERT INTO stoemp(naam) VALUES ';
                 sql += soepnaam;
                 console.log(sql);
                 connection.query(sql, function (err) {
@@ -66,7 +66,7 @@ app.get('/list', function (req, res) {
 
     //de soepen uit de database worden hier 'in the get' gestoken
     //zodat we ze in het formulier met een getjson(/list,... ) kunnen ophalen
-    var sql = 'select naam from soep';
+    var sql = 'select naam from stoemp';
     connection.query(sql, function (err, rows) {
         if (err) {
             throw err;
@@ -83,7 +83,7 @@ app.get('/listDays', function (req, res) {
 
     //de dagen uit de database worden hier 'in the get' gestoken
     //zodat we ze in het formulier met een getjson(/listDays,... ) kunnen ophalen
-    var sql = 'SELECT * FROM dag';
+    var sql = 'SELECT * FROM stoempDag';
     connection.query(sql, function (err, rows) {
         if (err) {
             throw err;
@@ -104,7 +104,7 @@ app.post('/verwijder', function (req, res) {
     var ontvangenSoep = req.body.soep;
     console.log(ontvangenSoep);
     var soepnaam = '("' + ontvangenSoep + '")'
-    var sql = 'DELETE FROM soep WHERE naam= '
+    var sql = 'DELETE FROM stoemp WHERE naam= '
     sql += soepnaam;
 
     connection.query(sql, function (err) {
@@ -132,7 +132,7 @@ app.post('/verwijderOudsteDag', function (req, res) {
 
     console.log('in de app.post/verwijderDagen-functie');
     //op deze manier wordt de oudste dag dag[0]
-    var zoeksql = 'SElECT datum FROM dag ORDER BY realDate ASC LIMIT 0,1';
+    var zoeksql = 'SElECT datum FROM stoempDag ORDER BY realDate ASC LIMIT 0,1';
     connection.query(zoeksql, function (err, dag) {
         if (err) {
             throw err;
@@ -144,7 +144,7 @@ app.post('/verwijderOudsteDag', function (req, res) {
         var kleinsteDag = dag[0].datum;
         kleinsteDag = '"' + kleinsteDag + '"';
         console.log(dag[0].datum);
-        var sql = 'DELETE FROM dag WHERE datum= ' + kleinsteDag;
+        var sql = 'DELETE FROM stoempDag WHERE datum= ' + kleinsteDag;
         console.log(sql);
         connection.query(sql, function (err) {
             if (err)
@@ -225,7 +225,7 @@ app.post('/soepen', function (req, res) {
     datum = weekdag + ' ' + dag + ' ' + maandnaam;
     datum = '"' + datum + '"';
     //Controle of de dag niet reeds is opgeslagen
-    var sql = 'SELECT datum FROM dag WHERE datum= '
+    var sql = 'SELECT datum FROM stoempDag WHERE datum= '
     sql += datum;
     console.log(sql);
     connection.query(sql, function (err, data) {
@@ -234,7 +234,7 @@ app.post('/soepen', function (req, res) {
         } else {
             if (data == '') {
                 console.log('dag wordt opgeslagen');
-                sql = 'INSERT INTO dag(datum,soep1,soep2,soep3,soep4,realDate) VALUES ';
+                sql = 'INSERT INTO stoempDag(datum,soep1,soep2,soep3,soep4,realDate) VALUES ';
                 sql += '(' + datum + ',' + soep1 + ',' + soep2 + ',' + soep3 + ',' + soep4 +','+'"'+datumInvoer+'"'+')';
                 console.log(sql);
                 connection.query(sql, function (err) {
