@@ -54,6 +54,14 @@
 
     <br>
     <label id="dagsoep4" class="text-info"></label>
+    <br>
+    <label id="dagsoep5" class="text-info"></label>
+    <br>
+    <label id="dagsoep6" class="text-info"></label>
+    <br>
+    <label id="dagsoep7" class="text-info"></label>
+
+
 
 
     <br>
@@ -190,7 +198,7 @@ $(document).ready(function () {
         $('#dagsoep' + dagteller).text($('#soeplabel').text());
         console.log("dagsoep is "+$('#soeplabel').text());
 
-        if (dagteller >= 4) {
+        if (dagteller >= 7) {
             dagteller = 0;
         }
     });
@@ -201,7 +209,7 @@ $(document).ready(function () {
     //zodat er terug vanaf label1 kan worden bijgevoegd
     $('#wisLabels').click(function (e) {
         e.preventDefault();
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 8; i++) {
             $('#dagsoep' + i).text('');
             dagteller = 0;
 
@@ -220,6 +228,9 @@ $(document).ready(function () {
                 'soep2': $('#dagsoep2').text(),
                 'soep3': $('#dagsoep3').text(),
                 'soep4': $('#dagsoep4').text(),
+                'soep5': $('#dagsoep5').text(),
+                'soep6': $('#dagsoep6').text(),
+                'soep7': $('#dagsoep7').text(),
                 'datum': $('#dag').val()
             }
         }).done(function (result) {
@@ -227,7 +238,7 @@ $(document).ready(function () {
 
         });
         //De labels worden terug gewist zodat er vlot kan overgegaan naar een nieuwe dag
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 8; i++) {
             $('#dagsoep' + i).text('');
             dagteller = 0;
 
@@ -329,6 +340,13 @@ $(document).ready(function () {
                             +(dag.soep3)
                             +'<br>'
                             +(dag.soep4)
+                            +'<br>'
+                            +(dag.soep5)
+                            +'<br>'
+                            +(dag.soep6)
+                            +'<br>'
+                            +(dag.soep7)
+
                             +'<br>'+
                             '">'
                         //Aan de option zelf hangen we enkel de datum

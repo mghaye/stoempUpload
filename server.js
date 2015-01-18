@@ -169,10 +169,16 @@ app.post('/soepen', function (req, res) {
     var soep2 = req.body.soep2;
     var soep3 = req.body.soep3;
     var soep4 = req.body.soep4;
+    var soep5 = req.body.soep5;
+    var soep6 = req.body.soep6;
+    var soep7 = req.body.soep7;
     soep1 = '"' + soep1 + '"';
     soep2 = '"' + soep2 + '"';
     soep3 = '"' + soep3 + '"';
     soep4 = '"' + soep4 + '"';
+    soep5 = '"' + soep5 + '"';
+    soep6 = '"' + soep6 + '"';
+    soep7 = '"' + soep7 + '"';
 
     //functie die de weekdag teruggeeft van een bepaalde datum
     //bvb : var weekdag=wichDayWasThat(18-04-2014)-> stelt weekdag gelijk aan vrijdag
@@ -234,8 +240,9 @@ app.post('/soepen', function (req, res) {
         } else {
             if (data == '') {
                 console.log('dag wordt opgeslagen');
-                sql = 'INSERT INTO stoempDag(datum,soep1,soep2,soep3,soep4,realDate) VALUES ';
-                sql += '(' + datum + ',' + soep1 + ',' + soep2 + ',' + soep3 + ',' + soep4 +','+'"'+datumInvoer+'"'+')';
+                sql = 'INSERT INTO stoempDag(datum,soep1,soep2,soep3,soep4,soep5,soep6,soep7,realDate) VALUES ';
+                sql += '(' + datum + ',' + soep1 + ',' + soep2 + ',' + soep3 + ',' + soep4 +','+ soep5 +','
+                + soep6 +','+ soep7 +','+'"'+datumInvoer+'"'+')';
                 console.log(sql);
                 connection.query(sql, function (err) {
                     if (err)
